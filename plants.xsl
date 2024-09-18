@@ -28,7 +28,7 @@
                         <th>Type</th>
                         <th>Name</th>
                         <th>Color</th>
-                        <th>Calories</th>
+                        <th>Calories per 100g.</th>
                     </tr>
                     <xsl:for-each select="plants/plant">
                         <tr>

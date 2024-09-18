@@ -6,36 +6,36 @@
         <type>Berry</type>
         <name>Tomato</name>
         <color>Red</color>
-        <calories>20/100g.</calories>
+        <calories>20</calories>
     </plant>
     <plant index = "plant2">
         <type>Vegetable</type>
         <name>Cucumber</name>
         <color>Green</color>
-        <calories>15/100g.</calories>
+        <calories>15</calories>
     </plant>
     <plant index = "plant3">
         <type>Fruit</type>
         <name>Apple</name>
         <color>Red</color>
-        <calories>30/100g.</calories>
+        <calories>30</calories>
     </plant>
     <plant index = "plant4">
         <type>Berry</type>
         <name>Plum</name>
         <color>Purple</color>
-        <calories>45/100g.</calories>
+        <calories>45</calories>
     </plant>
     <plant index = "plant5">
         <type>Vegetable</type>
         <name>Carrot</name>
         <color>Orange</color>
-        <calories>30/100g.</calories>
+        <calories>30</calories>
     </plant>
     <plant index = "plant6">
         <type>Fruit</type>
         <name>Banana</name>
         <color>Yellow</color>
-        <calories>55/100g.</calories>
+        <calories>55</calories>
     </plant>
 </plants>
