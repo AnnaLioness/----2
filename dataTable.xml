@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="plants.xsl"?>
+<plants>
+    <plant>
+        <type>Berry</type>
+        <name>Tomato</name>
+        <color>Red</color>
+        <calories>20/100g.</calories>
+    </plant>
+    <plant>
+        <type>Vegetable</type>
+        <name>Cucumber</name>
+        <color>Green</color>
+        <calories>15/100g.</calories>
+    </plant>
+    <plant>
+        <type>Fruit</type>
+        <name>Apple</name>
+        <color>Red</color>
+        <calories>30/100g.</calories>
+    </plant>
+    <plant>
+        <type>Berry</type>
+        <name>Plum</name>
+        <color>Purple</color>
+        <calories>45/100g.</calories>
+    </plant>
+    <plant>
+        <type>Vegetable</type>
+        <name>Carrot</name>
+        <color>Orange</color>
+        <calories>30/100g.</calories>
+    </plant>
+    <plant>
+        <type>Fruit</type>
+        <name>Banana</name>
+        <color>Yellow</color>
+        <calories>55/100g.</calories>
+    </plant>
+</plants>
