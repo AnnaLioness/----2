@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="plants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="plant" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="type" default="noName">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Vegetable"></xs:enumeration>
+                                        <xs:enumeration value="Fruit"></xs:enumeration>
+                                        <xs:enumeration value="Berry"></xs:enumeration>
+                                        <xs:enumeration value="noName"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="name" default="noname">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"></xs:minLength>
+                                        <xs:maxLength value="20"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="color" default="noname">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"></xs:minLength>
+                                        <xs:maxLength value="20"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="calories" default="10">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minExclusive value="5"></xs:minExclusive>
+                                        <xs:maxExclusive value="100"></xs:maxExclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="index" type="xs:ID" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
