@@ -40,5 +40,17 @@ INSERT INTO genre (name) VALUES
                 )
                 )
                 ) AS result_xml FROM genre) 
-                TO 'C:\miakd\genres.xml';
+                TO 'C:\miakd\----2\genres.xml';
+COPY (SELECT xmlelement(
+        name "films", xmlagg(
+            xmlelement(
+                name "film", 
+                xmlforest(id AS "id", name AS "name", release_date AS "release_date", age_limit AS "age_limit", genre_id AS "genre_id")
+                )
+                )
+                ) AS result_xml FROM film) 
+                TO 'C:\miakd\----2\films.xml';
+CREATE INDEX idx_film_genre_id_hash ON film USING HASH (genre_id);
+CREATE INDEX idx_genre_name_hash ON genre USING HASH (name);
+CREATE INDEX idx_film_release ON film USING BTREE (release_date);
                 
